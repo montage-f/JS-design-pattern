@@ -14,7 +14,7 @@ class Target {
 	}
 
 	request() {
-		// 去拿旧的信息, 然后变成新的信息然后去使用
+		// 去拿旧的信息, 然后变成新的信息然后去使用, 从而不使用老的接口, 用新的接口去代替老的接口
 		let info = this.adaptee.specificRequest()
 		return `${info}-转换器-中国标准插头`
 	}
